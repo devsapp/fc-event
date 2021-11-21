@@ -1,4 +1,3 @@
-import BaseComponent from './common/base';
 import logger from './common/logger';
 
 const fse = require('fs-extra');
@@ -7,12 +6,7 @@ import inquirer from 'inquirer';
 import {InputProps} from './common/entity';
 
 logger.setContent("FC-EVENT")
-export default class ComponentDemo extends BaseComponent {
-    constructor(props) {
-        super(props)
-
-    }
-
+export default class ComponentDemo {
     /**
      * OSS 触发器事件
      * @param inputs
@@ -57,6 +51,30 @@ export default class ComponentDemo extends BaseComponent {
       
       More information about SLS Trigger: 
         📝 https://help.aliyun.com/document_detail/84092.htm
+      
+      `)
+    }
+
+    /**
+     * http 触发器事件
+     * @param inputs
+     * @returns
+     */
+     public async http(inputs: InputProps) {
+        await fse.mkdirs('./event-template/');
+        const templateData = await fse.readFileSync(path.join(__dirname, '../', 'event-template/http.json'))
+        await fse.writeFileSync(path.join('./event-template/', 'http-parameter.json'), templateData);
+        logger.success(`
+
+      HTTP parameter template created successfully.
+      
+      👓 Parameter Template Path: ${path.join('./event-template/', 'http-parameter.json')}
+      
+      You could user fc/fc-api component invoke method and specify the event.
+      E.g: [s projectName invoke --event-file  ${path.join('./event-template/', 'http-parameter.json')}]
+      
+      More information about HTTP Trigger: 
+        📝 https://help.aliyun.com/document_detail/71229.html
       
       `)
     }
