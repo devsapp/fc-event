@@ -1,7 +1,7 @@
 {
 	"id": 0,
 	"name": "fc-event",
-	"kind": 0,
+	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
 	"originalName": "",
@@ -26,163 +26,16 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"parameters": [
-								{
-									"id": 4,
-									"name": "props",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
 							"type": {
 								"type": "reference",
 								"id": 1,
 								"name": "default"
-							},
-							"overwrites": {
-								"type": "reference",
-								"name": "BaseComponent.constructor"
 							}
 						}
-					],
-					"overwrites": {
-						"type": "reference",
-						"name": "BaseComponent.constructor"
-					}
+					]
 				},
 				{
-					"id": 20,
-					"name": "client",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isProtected": true
-					},
-					"sources": [
-						{
-							"fileName": "common/base.ts",
-							"line": 9,
-							"character": 20
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "BaseComponent.client"
-					}
-				},
-				{
-					"id": 21,
-					"name": "inputs",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isProtected": true
-					},
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "BaseComponent.inputs"
-					}
-				},
-				{
-					"id": 24,
-					"name": "__doc",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "common/base.ts",
-							"line": 34,
-							"character": 9
-						}
-					],
-					"signatures": [
-						{
-							"id": 25,
-							"name": "__doc",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 26,
-									"name": "projectName",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isOptional": true
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"name": "BaseComponent.__doc"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "BaseComponent.__doc"
-					}
-				},
-				{
-					"id": 22,
-					"name": "__getBasePath",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "common/base.ts",
-							"line": 21,
-							"character": 17
-						}
-					],
-					"signatures": [
-						{
-							"id": 23,
-							"name": "__getBasePath",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"name": "BaseComponent.__getBasePath"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "BaseComponent.__getBasePath"
-					}
-				},
-				{
-					"id": 17,
+					"id": 19,
 					"name": "cdn",
 					"kind": 2048,
 					"kindString": "Method",
@@ -192,13 +45,13 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 154,
-							"character": 20
+							"line": 172,
+							"character": 17
 						}
 					],
 					"signatures": [
 						{
-							"id": 18,
+							"id": 20,
 							"name": "cdn",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -209,7 +62,7 @@
 							},
 							"parameters": [
 								{
-									"id": 19,
+									"id": 21,
 									"name": "inputs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -235,7 +88,60 @@
 					]
 				},
 				{
-					"id": 14,
+					"id": 10,
+					"name": "http",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 63,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 11,
+							"name": "http",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "http 触发器事件",
+								"returns": "\n"
+							},
+							"parameters": [
+								{
+									"id": 12,
+									"name": "inputs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "InputProps"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				},
+				{
+					"id": 16,
 					"name": "mns",
 					"kind": 2048,
 					"kindString": "Method",
@@ -245,13 +151,13 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 93,
-							"character": 20
+							"line": 111,
+							"character": 17
 						}
 					],
 					"signatures": [
 						{
-							"id": 15,
+							"id": 17,
 							"name": "mns",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -262,7 +168,7 @@
 							},
 							"parameters": [
 								{
-									"id": 16,
+									"id": 18,
 									"name": "inputs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -288,7 +194,7 @@
 					]
 				},
 				{
-					"id": 5,
+					"id": 4,
 					"name": "oss",
 					"kind": 2048,
 					"kindString": "Method",
@@ -298,13 +204,13 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 21,
-							"character": 20
+							"line": 15,
+							"character": 17
 						}
 					],
 					"signatures": [
 						{
-							"id": 6,
+							"id": 5,
 							"name": "oss",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -315,7 +221,7 @@
 							},
 							"parameters": [
 								{
-									"id": 7,
+									"id": 6,
 									"name": "inputs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -341,7 +247,7 @@
 					]
 				},
 				{
-					"id": 8,
+					"id": 7,
 					"name": "sls",
 					"kind": 2048,
 					"kindString": "Method",
@@ -351,13 +257,13 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 45,
-							"character": 20
+							"line": 39,
+							"character": 17
 						}
 					],
 					"signatures": [
 						{
-							"id": 9,
+							"id": 8,
 							"name": "sls",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -368,7 +274,7 @@
 							},
 							"parameters": [
 								{
-									"id": 10,
+									"id": 9,
 									"name": "inputs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -394,7 +300,7 @@
 					]
 				},
 				{
-					"id": 11,
+					"id": 13,
 					"name": "tablestore",
 					"kind": 2048,
 					"kindString": "Method",
@@ -404,13 +310,13 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 69,
-							"character": 27
+							"line": 87,
+							"character": 17
 						}
 					],
 					"signatures": [
 						{
-							"id": 12,
+							"id": 14,
 							"name": "tablestore",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -421,7 +327,7 @@
 							},
 							"parameters": [
 								{
-									"id": 13,
+									"id": 15,
 									"name": "inputs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -456,38 +362,23 @@
 					]
 				},
 				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						20,
-						21
-					]
-				},
-				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						24,
-						22,
-						17,
-						14,
-						5,
-						8,
-						11
+						19,
+						10,
+						16,
+						4,
+						7,
+						13
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 10,
-					"character": 34
-				}
-			],
-			"extendedTypes": [
-				{
-					"type": "reference",
-					"name": "BaseComponent"
+					"line": 9,
+					"character": 21
 				}
 			]
 		}

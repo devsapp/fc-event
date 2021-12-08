@@ -15,6 +15,12 @@ export default class ComponentDemo extends BaseComponent {
      */
     sls(inputs: InputProps): Promise<void>;
     /**
+     * http 触发器事件
+     * @param inputs
+     * @returns
+     */
+    http(inputs: InputProps): Promise<void>;
+    /**
      * TableStore 触发器事件
      * @param inputs
      * @returns
