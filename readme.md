@@ -1,5 +1,7 @@
 # 组件说明
 
+<center>中文 ｜ <a href="readme_en.md">English</a> </center>
+
 该组件是用于辅助用户进行函数调用的组件。主要封装了多种函数计算的事件格式。
 
 ```

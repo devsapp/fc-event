@@ -1,5 +1,8 @@
 # Component description
 
+<center><a href="readme.md">中文</a> ｜ English </center>
+
+
 This component is a component used to assist users in making function calls. It mainly encapsulates the event format of a variety of function calculations.
 
 ````
