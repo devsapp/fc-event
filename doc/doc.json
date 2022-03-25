@@ -45,7 +45,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 172,
+							"line": 156,
 							"character": 17
 						}
 					],
@@ -57,7 +57,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "CDN 触发器事件",
+								"shortText": "CDN Trigger event",
 								"returns": "\n"
 							},
 							"parameters": [
@@ -82,6 +82,8 @@
 										"name": "void"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						}
@@ -98,7 +100,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 63,
+							"line": 57,
 							"character": 18
 						}
 					],
@@ -110,7 +112,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "http 触发器事件",
+								"shortText": "http Trigger event",
 								"returns": "\n"
 							},
 							"parameters": [
@@ -135,6 +137,8 @@
 										"name": "void"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						}
@@ -151,7 +155,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 111,
+							"line": 99,
 							"character": 17
 						}
 					],
@@ -163,7 +167,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "MNS 触发器事件",
+								"shortText": "MNS Trigger event",
 								"returns": "\n"
 							},
 							"parameters": [
@@ -188,6 +192,8 @@
 										"name": "void"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						}
@@ -216,7 +222,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "OSS 触发器事件",
+								"shortText": "OSS Trigger event",
 								"returns": "\n"
 							},
 							"parameters": [
@@ -241,6 +247,8 @@
 										"name": "void"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						}
@@ -257,7 +265,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 39,
+							"line": 36,
 							"character": 17
 						}
 					],
@@ -269,7 +277,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "SLS 触发器事件",
+								"shortText": "SLS Trigger event",
 								"returns": "\n"
 							},
 							"parameters": [
@@ -294,6 +302,8 @@
 										"name": "void"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						}
@@ -310,7 +320,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 87,
+							"line": 78,
 							"character": 17
 						}
 					],
@@ -322,7 +332,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "TableStore 触发器事件",
+								"shortText": "TableStore Trigger event",
 								"returns": "\n"
 							},
 							"parameters": [
@@ -347,6 +357,8 @@
 										"name": "void"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						}

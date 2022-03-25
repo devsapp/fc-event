@@ -8,7 +8,7 @@ import {InputProps} from './common/entity';
 logger.setContent("FC-EVENT")
 export default class ComponentDemo {
     /**
-     * OSS 触发器事件
+     * OSS Trigger event
      * @param inputs
      * @returns
      */
@@ -22,17 +22,14 @@ export default class ComponentDemo {
       
       👓 Event Template Path: ${path.join('./event-template/', 'oss-event.json')}
       
-      You could user fc/fc-api component invoke method and specify the event.
+      You could user fc component invoke method and specify the event.
       E.g: [s projectName invoke --event-file  ${path.join('./event-template/', 'oss-event.json')}]
-      
-      More information about OSS Trigger: 
-        📝 https://help.aliyun.com/document_detail/74763.htm
-      
+
       `)
     }
 
     /**
-     * SLS 触发器事件
+     * SLS Trigger event
      * @param inputs
      * @returns
      */
@@ -46,17 +43,14 @@ export default class ComponentDemo {
       
       👓 Event Template Path: ${path.join('./event-template/', 'sls-event.json')}
       
-      You could user fc/fc-api component invoke method and specify the event.
+      You could user fc component invoke method and specify the event.
       E.g: [s projectName invoke --event-file  ${path.join('./event-template/', 'sls-event.json')}]
-      
-      More information about SLS Trigger: 
-        📝 https://help.aliyun.com/document_detail/84092.htm
-      
+
       `)
     }
 
     /**
-     * http 触发器事件
+     * http Trigger event
      * @param inputs
      * @returns
      */
@@ -70,17 +64,14 @@ export default class ComponentDemo {
       
       👓 Parameter Template Path: ${path.join('./event-template/', 'http-parameter.json')}
       
-      You could user fc/fc-api component invoke method and specify the event.
+      You could user fc component invoke method and specify the event.
       E.g: [s projectName invoke --event-file  ${path.join('./event-template/', 'http-parameter.json')}]
-      
-      More information about HTTP Trigger: 
-        📝 https://help.aliyun.com/document_detail/71229.html
-      
+
       `)
     }
 
     /**
-     * TableStore 触发器事件
+     * TableStore Trigger event
      * @param inputs
      * @returns
      */
@@ -94,17 +85,14 @@ export default class ComponentDemo {
       
       👓 Event Template Path: ${path.join('./event-template/', 'tablestore-event.json')}
       
-      You could user fc/fc-api component invoke method and specify the event.
+      You could user fc component invoke method and specify the event.
       E.g: [s projectName invoke --event-file  ${path.join('./event-template/', 'tablestore-event.json')}]
-      
-      More information about TableStore Trigger: 
-        📝 https://help.aliyun.com/document_detail/169673.htm
-      
+
       `)
     }
 
     /**
-     * MNS 触发器事件
+     * MNS Trigger event
      * @param inputs
      * @returns
      */
@@ -114,12 +102,12 @@ export default class ComponentDemo {
         const cicdPlatform: any = await inquirer.prompt([{
             type: 'list',
             name: 'platform',
-            'message': '请选择MNS事件类型',
+            'message': 'Please select MNS event type',
             choices: [
-                {name: 'event格式设置为STREAM， 消息中不含消息属性（MessageAttributes）时', value: '0'},
-                {name: 'event格式设置为STREAM， 消息中含有消息属性（MessageAttributes）时', value: '1'},
-                {name: 'event格式设置为JSON， 消息中不含消息属性（MessageAttributes）时', value: '2'},
-                {name: 'event格式设置为JSON， 消息中含有消息属性（MessageAttributes）时', value: '3'},
+                {name: 'When the event format is set to STREAM, the message does not contain message attributes (MessageAttributes)', value: '0'},
+                {name: 'When the event format is set to STREAM and the message contains message attributes (MessageAttributes)', value: '1'},
+                {name: 'When the event format is set to JSON and the message does not contain message attributes (MessageAttributes)', value: '2'},
+                {name: 'When the event format is set to JSON and the message contains message attributes (MessageAttributes)', value: '3'},
             ]
         }]);
         let templateData
@@ -155,17 +143,13 @@ export default class ComponentDemo {
       
       👓 Event Template Path: ${path.join('./event-template/', targetFile)}
       
-      You could user fc/fc-api component invoke method and specify the event.
+      You could user fc component invoke method and specify the event.
       E.g: [s projectName invoke --event-file  ${path.join('./event-template/', targetFile)}]
-      
-      More information about MNS Trigger: 
-        📝 https://help.aliyun.com/document_detail/97022.htm
-      
       `)
     }
 
     /**
-     * CDN 触发器事件
+     * CDN Trigger event
      * @param inputs
      * @returns
      */
@@ -175,16 +159,16 @@ export default class ComponentDemo {
         const cicdPlatform: any = await inquirer.prompt([{
             type: 'list',
             name: 'platform',
-            'message': '请选择MNS事件类型',
+            'message': 'Please select an CDN event type',
             choices: [
-                {name: 'LogFileCreated事件', value: '0'},
-                {name: 'CachedObjectsRefreshed事件', value: '1'},
-                {name: 'CachedObjectsPushed事件', value: '2'},
-                {name: 'CachedObjectsBlocked事件', value: '3'},
-                {name: 'CdnDomainStarted事件', value: '4'},
-                {name: 'CdnDomainStopped事件', value: '5'},
-                {name: 'CdnDomainAdded事件', value: '6'},
-                {name: 'CdnDomainDeleted事件', value: '7'}
+                {name: 'LogFileCreated', value: '0'},
+                {name: 'CachedObjectsRefreshed', value: '1'},
+                {name: 'CachedObjectsPushed', value: '2'},
+                {name: 'CachedObjectsBlocked', value: '3'},
+                {name: 'CdnDomainStarted', value: '4'},
+                {name: 'CdnDomainStopped', value: '5'},
+                {name: 'CdnDomainAdded', value: '6'},
+                {name: 'CdnDomainDeleted', value: '7'}
             ]
         }]);
         let templateData
@@ -240,11 +224,8 @@ export default class ComponentDemo {
       
       👓 Event Template Path: ${path.join('./event-template/', targetFile)}
       
-      You could user fc/fc-api component invoke method and specify the event.
+      You could user fc component invoke method and specify the event.
       E.g: [s projectName invoke --event-file  ${path.join('./event-template/', targetFile)}]
-      
-      More information about CDN Trigger: 
-        📝 https://help.aliyun.com/document_detail/75121.htm
       
       `)
     }

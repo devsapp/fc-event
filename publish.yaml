@@ -2,16 +2,16 @@ Type: Component
 Name: fc-event
 Provider:
   - 其它
-Version: 0.0.2
-Description: 初始化component模板
+Version: 0.0.3
+Description: Fc Event Component
 HomePage: https://github.com/devsapp/fc-event
 Tags: #标签详情
   - 模板
 Category: 其它
 Commands:
-  cdn: CDN 触发器事件
-  mns: MNS 触发器事件
-  oss: 触发器事件
-  sls: SLS 触发器事件
-  tablestore: TableStore 触发器事件
-  http: HTTP 触发器事件
+  cdn: CDN Trigger event
+  mns: MNS Trigger event
+  oss: OSS Trigger event
+  sls: SLS Trigger event
+  tablestore: TableStore Trigger event
+  http: HTTP Trigger event
